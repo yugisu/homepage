@@ -7,11 +7,29 @@
       href="https://volodymyrkushnir.com/assets/stylesheets/base.css"
     />
     <title>Résumé</title>
+    <style>
+      .avatar-ext {
+        border-radius: 50%;
+        width: 70%;
+        height: 70%;
+        margin-top: 1rem;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      }
+      a[rel='external'] {
+        position: relative;
+        text-decoration: none;
+        border: none;
+      }
+      a[rel='external']::after {
+        content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVDhP1ZFRCkBQEEVnXRKfikWxFzvDn0Vwb8+Uxv14lOLUaSave+eD/YZN+IgarlAWdHCB8dIAiYc5ZcEMi7ReqKCHiSyQH4GHOZ3sghjujymJBdmXnfg4wnOY3CpQvFvA31imVcK3Ka2aFrKEV5QMN/BTmO2ATy3ToOYKcAAAAABJRU5ErkJggg==);
+        transform: scale(0.5, 0);
+      }
+    </style>
   </head>
   <body>
     <main>
       <article>
-        <div class="page" style="border-color: midnightblue;">
+        <div class="page" style="border-color: #5d5c53;">
           <div class="stackable grid">
             <div class="row">
               <div class="three wide center aligned column">
@@ -19,13 +37,7 @@
                   <img
                     src="./assets/images/avatar.jpg"
                     alt="Avatar"
-                    class="avatar"
-                    style="
-                    border-radius: 50%;
-                    width: 70%;
-                    height: 70%;
-                    margin-top: 1rem;
-                  "
+                    class="avatar avatar-ext"
                   />
                 </div>
               </div>
@@ -33,7 +45,6 @@
                 <div class="stackable grid">
                   <div class="sixteen wide column">
                     <h1 class="name">Dmytrii Puzyr</h1>
-                    <div class="job">Student at FICT KPI</div>
                     <ul class="contacts">
                       <li>
                         <a href="https://linkedin.com/in/dpuzyr" class="facebook">
@@ -92,10 +103,10 @@
                   <div class="sixteen wide column">
                     <h2>Résumé</h2>
                     <p>
-                      Hello! I'm a tall guy (get your height jokes prepared) who came to
-                      Kyiv to try his best in the IT industry. Love to do some front-end
-                      stuff like learning HTML/CSS, JS, React.js and eating cookies. Yep,
-                      I know the difference between a markup and a programming language.
+                      Hello! I'm a tall guy (get your height jokes ready) who came to Kyiv
+                      to try his best in the IT industry. Love to do some front-end stuff
+                      like learning HTML/CSS, JS, React.js and eating cookies. Yep, I know
+                      the difference between a markup and a programming language.
                     </p>
                   </div>
                 </div>
@@ -109,16 +120,200 @@
             <div class="row">
               <div class="ten wide column">
                 <!-- Experience -->
+                <section>
+                  <h3>Timeline</h3>
+                  <ul class="timeline">
+                    <li>
+                      <p><em>1 september 2017 - nowadays</em></p>
+                      <p><strong>Start learning computer science at FICT KPI</strong></p>
+                      <ul>
+                        <li>
+                          <p>
+                            First programming language passion - Javascipt (kinda dizzy
+                            about that, love TypeScript more now).
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            One of the most important decisions in my life (after deciding
+                            not to eat that strange booger in kindergarten ofc) - to
+                            invest my time into learning front-end.
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><em>1st September 2006 – 23th June 2017</em></p>
+                      <p><strong>Studying at school</strong></p>
+                      <ul>
+                        <li>
+                          <p>First programming experience at a programming olympiad.</p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><em>Some time in 2003 - some time in 2006</em></p>
+                      <p>
+                        <strong>
+                          Attending first public place where I could learn something
+                          useful - a kindergarten.
+                        </strong>
+                      </p>
+                      <ul>
+                        <li>
+                          <p>
+                            Feeling myself a hero because of decision not to eat that
+                            strange booger some random boy gave me.
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><em>February, 27th 2000</em></p>
+                      <p><strong>Happy birthday to me!</strong></p>
+                    </li>
+                  </ul>
+                </section>
               </div>
               <div class="six wide column">
-                <!-- Languages -->
-                <!-- Skills -->
-                <!-- Character -->
-                <!-- Likes -->
-                <!-- Dislikes -->
-                <!-- Wants -->
-                <!-- Education -->
-                <!-- Articles -->
+                <section>
+                  <h3>Languages</h3>
+                  <p class="tags small">
+                    <span class="language" lang="uk">🇺🇦 <span>УКРАЇНСЬКА</span> </span>
+                    <span class="language" lang="ru">🇷🇺 <span>РУССКИЙ</span> </span>
+                    <span class="language" lang="en">🇺🇸 ENGLISH</span>
+                  </p>
+                </section>
+                <section>
+                  <h3>Skills</h3>
+                  <p class="tags small">
+                    HTML CSS JS TS REACT REDUX ADAPTIVE SASS SCSS WEBPACK NODEJS NPM
+                    PYTHON SQL WINDOWS LINUX SHELL
+                    <span class="nowrap">FUNCTIONAL PROGRAMMING</span>
+                    OOP
+                    <span class="nowrap">EASY LEARNING</span>
+                  </p>
+                </section>
+                <section>
+                  <h3>Passions</h3>
+                  <p class="tags small">
+                    REACT KITTENS '80S/'90S MUSIC GAMES COOKIES APRICOTS
+                    <span class="nowrap">TALL SOCKS</span>
+                    <span class="nowrap">ESTETYCHNI UI</span>
+                  </p>
+                </section>
+                <section>
+                  <h3>Dislikes</h3>
+                  <p class="tags small">
+                    DISORDER <span class="nowrap">POORLY WRITTEN CODE</span>
+                    <span class="nowrap">SLOVA TRANSLITOM</span>
+                  </p>
+                </section>
+                <section>
+                  <h3>Education</h3>
+                  <ul class="timeline">
+                    <li>
+                      <div><em>Every day</em></div>
+                      <p class="tags bulleted">
+                        <span class="tag">
+                          <a href="https://www.freecodecamp.org/" rel="external">
+                            <strong style="color: darkgreen">freeCodeCamp</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://www.w3schools.com/" rel="external">
+                            <strong style="color: #4CAF50">w3schools</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://css-tricks.com/" rel="external">
+                            <strong style="color: #e36d41">CSS tricks</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://alligator.io/" rel="external">
+                            <strong>alligator.io</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://overreacted.io/" rel="external">
+                            <strong style="color: #ffa7c4">Overreacted</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://kentcdodds.com/" rel="external">
+                            <strong>Kent C. Dodds</strong>
+                          </a>
+                        </span>
+                      </p>
+                    </li>
+                    <li>
+                      <div>
+                        <em>1<sup>st</sup> September 2017 – nowadays</em>
+                      </div>
+                      <div>
+                        <strong>Learning</strong>
+                        <strong>computer science</strong> at
+                        <a href="https://kpi.ua/" rel="external">
+                          <strong>Kyiv Politechnic Institute</strong>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <em>1<sup>st</sup> September 2006 – 23<sup>th</sup> June 2017</em>
+                      </div>
+                      <div>
+                        <strong>Certificate of graduation</strong> at
+                        <strong>№1 Middle School of General Education</strong>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Pet Projects</h3>
+                  <ul class="timeline">
+                    <li>
+                      <a href="https://yesorno.world" rel="external" style="color: #222">
+                        <em><strong>YesOrNo</strong></em>
+                      </a>
+                      <a
+                        href="https://github.com/IINamelessII/YesOrNo"
+                        rel="external"
+                        style="color: #222"
+                      >
+                        <em>Github</em>
+                      </a>
+                      <p>
+                        A sophisticated create-poll-and-vote app.
+                      </p>
+                    </li>
+                    <li>
+                      <a
+                        href="https://habender-test.azurewebsites.net"
+                        rel="external"
+                        style="color: #222"
+                      >
+                        <em><strong>Habender</strong></em>
+                      </a>
+                      <a
+                        href="https://github.com/yugisu/habender"
+                        rel="external"
+                        style="color: #222"
+                      >
+                        <em>Github</em>
+                      </a>
+                      <p>
+                        Simple Todo app times days in a week times weeks in a month.
+                      </p>
+                    </li>
+                  </ul>
+                </section>
               </div>
             </div>
           </div>
