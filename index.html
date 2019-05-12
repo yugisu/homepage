@@ -15,6 +15,15 @@
         margin-top: 1rem;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
       }
+      a[rel='external'] {
+        position: relative;
+        text-decoration: none;
+        border: none;
+      }
+      a[rel='external']::after {
+        content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVDhP1ZFRCkBQEEVnXRKfikWxFzvDn0Vwb8+Uxv14lOLUaSave+eD/YZN+IgarlAWdHCB8dIAiYc5ZcEMi7ReqKCHiSyQH4GHOZ3sghjujymJBdmXnfg4wnOY3CpQvFvA31imVcK3Ka2aFrKEV5QMN/BTmO2ATy3ToOYKcAAAAABJRU5ErkJggg==);
+        transform: scale(0.5, 0);
+      }
     </style>
   </head>
   <body>
