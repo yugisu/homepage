@@ -2,9 +2,323 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://volodymyrkushnir.com/assets/stylesheets/base.css"
+    />
     <title>Résumé</title>
+    <style>
+      .avatar-ext {
+        border-radius: 50%;
+        width: 70%;
+        height: 70%;
+        margin-top: 1rem;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      }
+      a[rel='external'] {
+        position: relative;
+        text-decoration: none;
+        border: none;
+      }
+      a[rel='external']::after {
+        content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVDhP1ZFRCkBQEEVnXRKfikWxFzvDn0Vwb8+Uxv14lOLUaSave+eD/YZN+IgarlAWdHCB8dIAiYc5ZcEMi7ReqKCHiSyQH4GHOZ3sghjujymJBdmXnfg4wnOY3CpQvFvA31imVcK3Ka2aFrKEV5QMN/BTmO2ATy3ToOYKcAAAAABJRU5ErkJggg==);
+        transform: scale(0.5, 0);
+      }
+    </style>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <article>
+        <div class="page" style="border-color: #5d5c53;">
+          <div class="stackable grid">
+            <div class="row">
+              <div class="three wide center aligned column">
+                <div class="avatar-wrapper">
+                  <img
+                    src="./assets/images/avatar.jpg"
+                    alt="Avatar"
+                    class="avatar avatar-ext"
+                  />
+                </div>
+              </div>
+              <div class="thirteen wide column">
+                <div class="stackable grid">
+                  <div class="sixteen wide column">
+                    <h1 class="name">Dmytrii Puzyr</h1>
+                    <ul class="contacts">
+                      <li>
+                        <a href="https://linkedin.com/in/dpuzyr" class="facebook">
+                          <svg
+                            class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                            />
+                          </svg>
+                          <span>
+                            dpuzyr
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mailto:slymahel@gmail.com" class="mail">
+                          <svg
+                            class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                            ></path>
+                          </svg>
+                          <span>
+                            slymahel@gmail.com
+                          </span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="https://github.com/yugisu" class="github">
+                          <svg
+                            class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512"
+                          >
+                            <path
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                            />
+                          </svg>
+                          <span>
+                            yugisu
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sixteen wide mobile only column">
+                    <div class="divider"></div>
+                  </div>
+                  <div class="sixteen wide column">
+                    <h2>Résumé</h2>
+                    <p>
+                      Hello! I'm a tall guy (get your height jokes ready) who came to Kyiv
+                      to try his best in the IT industry. Love to do some front-end stuff
+                      like learning HTML/CSS, JS, React.js and eating cookies. Yep, I know
+                      the difference between a markup and a programming language.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="sixteen wide column">
+                <div class="fat divider"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="ten wide column">
+                <!-- Experience -->
+                <section>
+                  <h3>Timeline</h3>
+                  <ul class="timeline">
+                    <li>
+                      <p><em>1 september 2017 - nowadays</em></p>
+                      <p><strong>Start learning computer science at FICT KPI</strong></p>
+                      <ul>
+                        <li>
+                          <p>
+                            First programming language passion - Javascipt (kinda dizzy
+                            about that, love TypeScript more now).
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            One of the most important decisions in my life (after deciding
+                            not to eat that strange booger in kindergarten ofc) - to
+                            invest my time into learning front-end.
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><em>1st September 2006 – 23th June 2017</em></p>
+                      <p><strong>Studying at school</strong></p>
+                      <ul>
+                        <li>
+                          <p>First programming experience at a programming olympiad.</p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><em>Some time in 2003 - some time in 2006</em></p>
+                      <p>
+                        <strong>
+                          Attending first public place where I could learn something
+                          useful - a kindergarten.
+                        </strong>
+                      </p>
+                      <ul>
+                        <li>
+                          <p>
+                            Feeling myself a hero because of decision not to eat that
+                            strange booger some random boy gave me.
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><em>February, 27th 2000</em></p>
+                      <p><strong>Happy birthday to me!</strong></p>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="six wide column">
+                <section>
+                  <h3>Languages</h3>
+                  <p class="tags small">
+                    <span class="language" lang="uk">🇺🇦 <span>УКРАЇНСЬКА</span> </span>
+                    <span class="language" lang="ru">🇷🇺 <span>РУССКИЙ</span> </span>
+                    <span class="language" lang="en">🇺🇸 ENGLISH</span>
+                  </p>
+                </section>
+                <section>
+                  <h3>Skills</h3>
+                  <p class="tags small">
+                    HTML CSS JS TS REACT REDUX ADAPTIVE SASS SCSS WEBPACK NODEJS NPM
+                    PYTHON SQL WINDOWS LINUX SHELL
+                    <span class="nowrap">FUNCTIONAL PROGRAMMING</span>
+                    OOP
+                    <span class="nowrap">EASY LEARNING</span>
+                  </p>
+                </section>
+                <section>
+                  <h3>Passions</h3>
+                  <p class="tags small">
+                    REACT KITTENS '80S/'90S MUSIC GAMES COOKIES APRICOTS
+                    <span class="nowrap">TALL SOCKS</span>
+                    <span class="nowrap">ESTETYCHNI UI</span>
+                  </p>
+                </section>
+                <section>
+                  <h3>Dislikes</h3>
+                  <p class="tags small">
+                    DISORDER <span class="nowrap">POORLY WRITTEN CODE</span>
+                    <span class="nowrap">SLOVA TRANSLITOM</span>
+                  </p>
+                </section>
+                <section>
+                  <h3>Education</h3>
+                  <ul class="timeline">
+                    <li>
+                      <div><em>Every day</em></div>
+                      <p class="tags bulleted">
+                        <span class="tag">
+                          <a href="https://www.freecodecamp.org/" rel="external">
+                            <strong style="color: darkgreen">freeCodeCamp</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://www.w3schools.com/" rel="external">
+                            <strong style="color: #4CAF50">w3schools</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://css-tricks.com/" rel="external">
+                            <strong style="color: #e36d41">CSS tricks</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://alligator.io/" rel="external">
+                            <strong>alligator.io</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://overreacted.io/" rel="external">
+                            <strong style="color: #ffa7c4">Overreacted</strong>
+                          </a>
+                        </span>
+
+                        <span class="tag">
+                          <a href="https://kentcdodds.com/" rel="external">
+                            <strong>Kent C. Dodds</strong>
+                          </a>
+                        </span>
+                      </p>
+                    </li>
+                    <li>
+                      <div>
+                        <em>1<sup>st</sup> September 2017 – nowadays</em>
+                      </div>
+                      <div>
+                        <strong>Learning</strong>
+                        <strong>computer science</strong> at
+                        <a href="https://kpi.ua/" rel="external">
+                          <strong>Kyiv Politechnic Institute</strong>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <em>1<sup>st</sup> September 2006 – 23<sup>th</sup> June 2017</em>
+                      </div>
+                      <div>
+                        <strong>Certificate of graduation</strong> at
+                        <strong>№1 Middle School of General Education</strong>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Pet Projects</h3>
+                  <ul class="timeline">
+                    <li>
+                      <a href="https://yesorno.world" rel="external" style="color: #222">
+                        <em><strong>YesOrNo</strong></em>
+                      </a>
+                      <a
+                        href="https://github.com/IINamelessII/YesOrNo"
+                        rel="external"
+                        style="color: #222"
+                      >
+                        <em>Github</em>
+                      </a>
+                      <p>
+                        A sophisticated create-poll-and-vote app.
+                      </p>
+                    </li>
+                    <li>
+                      <a
+                        href="https://habender-test.azurewebsites.net"
+                        rel="external"
+                        style="color: #222"
+                      >
+                        <em><strong>Habender</strong></em>
+                      </a>
+                      <a
+                        href="https://github.com/yugisu/habender"
+                        rel="external"
+                        style="color: #222"
+                      >
+                        <em>Github</em>
+                      </a>
+                      <p>
+                        Simple Todo app times days in a week times weeks in a month.
+                      </p>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
