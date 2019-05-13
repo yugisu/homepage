@@ -15,14 +15,8 @@
         margin-top: 1rem;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
       }
-      a[rel='external'] {
-        position: relative;
-        text-decoration: none;
-        border: none;
-      }
-      a[rel='external']::after {
-        content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVDhP1ZFRCkBQEEVnXRKfikWxFzvDn0Vwb8+Uxv14lOLUaSave+eD/YZN+IgarlAWdHCB8dIAiYc5ZcEMi7ReqKCHiSyQH4GHOZ3sghjujymJBdmXnfg4wnOY3CpQvFvA31imVcK3Ka2aFrKEV5QMN/BTmO2ATy3ToOYKcAAAAABJRU5ErkJggg==);
-        transform: scale(0.5, 0);
+      .color-gray {
+        color: #222;
       }
     </style>
   </head>
@@ -124,7 +118,9 @@
                   <h3>Timeline</h3>
                   <ul class="timeline">
                     <li>
-                      <p><em>1 september 2017 - nowadays</em></p>
+                      <p>
+                        <em>1<sup>st</sup> september 2017 - nowadays</em>
+                      </p>
                       <p><strong>Start learning computer science at FICT KPI</strong></p>
                       <ul>
                         <li>
@@ -143,7 +139,9 @@
                       </ul>
                     </li>
                     <li>
-                      <p><em>1st September 2006 – 23th June 2017</em></p>
+                      <p>
+                        <em>1<sup>st</sup> September 2006 – 23<sup>th</sup> June 2017</em>
+                      </p>
                       <p><strong>Studying at school</strong></p>
                       <ul>
                         <li>
@@ -169,8 +167,20 @@
                       </ul>
                     </li>
                     <li>
-                      <p><em>February, 27th 2000</em></p>
-                      <p><strong>Happy birthday to me!</strong></p>
+                      <p>
+                        <em>27<sup>th</sup> February 2000</em>
+                      </p>
+                      <p>
+                        <strong>
+                          Born in
+                          <a
+                            href="https://www.google.com/maps/place/Козятин,+Вінницька+область,+22100"
+                            rel="external"
+                          >
+                            Koziatyn, Ukraine
+                          </a></strong
+                        >
+                      </p>
                     </li>
                   </ul>
                 </section>
@@ -195,15 +205,16 @@
                   </p>
                 </section>
                 <section>
-                  <h3>Passions</h3>
+                  <h3>Passions 🔮</h3>
                   <p class="tags small">
                     REACT KITTENS '80S/'90S MUSIC GAMES COOKIES APRICOTS
                     <span class="nowrap">TALL SOCKS</span>
                     <span class="nowrap">ESTETYCHNI UI</span>
+                    <span class="nowrap">WINDOWS EMOJIS</span>
                   </p>
                 </section>
                 <section>
-                  <h3>Dislikes</h3>
+                  <h3>Dislikes 👎</h3>
                   <p class="tags small">
                     DISORDER <span class="nowrap">POORLY WRITTEN CODE</span>
                     <span class="nowrap">SLOVA TRANSLITOM</span>
@@ -217,19 +228,19 @@
                       <p class="tags bulleted">
                         <span class="tag">
                           <a href="https://www.freecodecamp.org/" rel="external">
-                            <strong style="color: darkgreen">freeCodeCamp</strong>
+                            <strong>freeCodeCamp</strong>
                           </a>
                         </span>
 
                         <span class="tag">
                           <a href="https://www.w3schools.com/" rel="external">
-                            <strong style="color: #4CAF50">w3schools</strong>
+                            <strong>w3schools</strong>
                           </a>
                         </span>
 
                         <span class="tag">
                           <a href="https://css-tricks.com/" rel="external">
-                            <strong style="color: #e36d41">CSS tricks</strong>
+                            <strong>CSS tricks</strong>
                           </a>
                         </span>
 
@@ -241,7 +252,7 @@
 
                         <span class="tag">
                           <a href="https://overreacted.io/" rel="external">
-                            <strong style="color: #ffa7c4">Overreacted</strong>
+                            <strong>Overreacted</strong>
                           </a>
                         </span>
 
@@ -279,13 +290,13 @@
                   <h3>Pet Projects</h3>
                   <ul class="timeline">
                     <li>
-                      <a href="https://yesorno.world" rel="external" style="color: #222">
+                      <a href="https://yesorno.world" rel="external" class="color-gray">
                         <em><strong>YesOrNo</strong></em>
                       </a>
                       <a
                         href="https://github.com/IINamelessII/YesOrNo"
                         rel="external"
-                        style="color: #222"
+                        class="color-gray"
                       >
                         <em>Github</em>
                       </a>
@@ -297,14 +308,14 @@
                       <a
                         href="https://habender-test.azurewebsites.net"
                         rel="external"
-                        style="color: #222"
+                        class="color-gray"
                       >
                         <em><strong>Habender</strong></em>
                       </a>
                       <a
                         href="https://github.com/yugisu/habender"
                         rel="external"
-                        style="color: #222"
+                        class="color-gray"
                       >
                         <em>Github</em>
                       </a>
