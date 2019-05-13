@@ -1,0 +1,17 @@
+.avatar-ext {
+  border-radius: 50%;
+  width: 15vw;
+}
+.main-ext {
+  background: linear-gradient(to bottom, rgba(65, 64, 57, 0.726), #fff),
+    linear-gradient(to right, #fff, rgba(0, 0, 0, 0.5));
+}
+.page-ext {
+  box-shadow: 0 20px 75px -10px rgba(0, 0, 0, 0.3);
+}
+.page-ext:hover {
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.4);
+}
+.color-gray {
+  color: #333;
+}
